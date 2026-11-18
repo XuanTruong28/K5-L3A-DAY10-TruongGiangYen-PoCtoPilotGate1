@@ -14,8 +14,8 @@ Họ tên đầy đủ và MSSV của **mọi** thành viên; thêm dòng nếu 
 | STT | Họ và tên | MSSV | Vai | Trưởng nhóm |
 | --: | --------- | ---- | --- | :---------: |
 |   1 | Trần Xuân Trường | (Điền MSSV) | Kỹ sư cổng | X |
-|   2 | Giang | (Điền MSSV) | Sản phẩm và kinh doanh | |
-|   3 | Yến | (Điền MSSV) | Vận hành và pháp lý | |
+|   2 | Chị Yến | (Điền MSSV) | Sản phẩm và kinh doanh | |
+|   3 | Bạn Giang | (Điền MSSV) | Vận hành và pháp lý | |
 
 Ghi `members` trong `submission/submission.json` theo dạng `"HoVaTen-MSSV"`, khớp bảng trên.
 
