@@ -13,9 +13,9 @@ Họ tên đầy đủ và MSSV của **mọi** thành viên; thêm dòng nếu 
 
 | STT | Họ và tên | MSSV | Vai | Trưởng nhóm |
 | --: | --------- | ---- | --- | :---------: |
-|   1 | Trần Xuân Trường | (Điền MSSV) | Kỹ sư cổng | X |
-|   2 | Chị Yến | (Điền MSSV) | Sản phẩm và kinh doanh | |
-|   3 | Bạn Giang | (Điền MSSV) | Vận hành và pháp lý | |
+|   1 | Trần Xuân Trường | 2A202603617 | Kỹ sư cổng | X |
+|   2 |  Nguyễn Thị Hải Yến | 2A202603567 | Sản phẩm và kinh doanh | |
+|   3 |  Nguyễn Thị Hương Giang | 2A202603538 | Vận hành và pháp lý | |
 
 Ghi `members` trong `submission/submission.json` theo dạng `"HoVaTen-MSSV"`, khớp bảng trên.
 
@@ -23,7 +23,7 @@ Ghi `members` trong `submission/submission.json` theo dạng `"HoVaTen-MSSV"`, k
 
 Mỗi thành viên tự viết một mục bên dưới (chép mẫu, đổi tiêu đề thành họ tên không dấu và MSSV, ví dụ `## NguyenVanAn-20241234`).
 
-## TranXuanTruong-MSSV
+## TranXuanTruong-2A202603617
 
 ### Phần việc phụ trách
 - Vai: Kỹ sư cổng (Trưởng nhóm).
@@ -47,7 +47,7 @@ Mỗi thành viên tự viết một mục bên dưới (chép mẫu, đổi ti�
 
 ---
 
-## Yen-MSSV
+## NguyenThiHaiYen-2A202603567
 
 ### Phần việc phụ trách
 - Vai: Sản phẩm và kinh doanh.
@@ -70,7 +70,7 @@ Mỗi thành viên tự viết một mục bên dưới (chép mẫu, đổi ti�
 
 ---
 
-## Giang-MSSV
+## NguyenThiHuongGiang-2A202603538
 
 ### Phần việc phụ trách
 - Vai: Vận hành và pháp lý.
