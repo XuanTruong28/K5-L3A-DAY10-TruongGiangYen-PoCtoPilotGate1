@@ -19,7 +19,13 @@ def escalation_rate(trials):
     return sum(t["status"] == "escalated" for t in trials) / max(1, len(trials))
 
 
+def carrier_strike_frequency(trials):
+    """Tỉ lệ ticket có ghi lỗi hãng vận chuyển (bắt được sự cố dồn lỗi phạt cho hãng như bão lũ S3)."""
+    return sum(1 for t in trials if t.get("faults")) / max(1, len(trials))
+
+
 MONITORS = {
     "escalation_rate": escalation_rate,     # có sẵn; KHÔNG tính là metric mới của đội
+    "carrier_strike_frequency": carrier_strike_frequency,  # metric mới của đội
 }
 STARTER_MONITORS = ("escalation_rate",)

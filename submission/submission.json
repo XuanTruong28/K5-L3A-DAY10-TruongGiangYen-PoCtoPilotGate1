@@ -5,12 +5,12 @@
     "NguyenThiHuongGiang-2A202603538",
     "NguyenThiHaiYen-2A202603567"
   ],
-  "incident": "",
+  "incident": "S3",
   "decision_v1": "Tiếp tục",
-  "decision_v2": "",
+  "decision_v2": "Tiếp tục",
   "three_lines": {
-    "environment_assumption": "",
-    "reduce_or_prevent": "",
-    "measure_in_pilot": ""
+    "environment_assumption": "Hệ thống giả định rằng dữ liệu nguyên nhân trễ hạn trong Tracking DB luôn được nhân viên điều phối cập nhật tức thời và chính xác trước khi khách hàng gửi khiếu nại, trong khi trên thực tế bão lũ thiên tai thường làm gián đoạn liên lạc khiến dữ liệu bị chậm hoặc thiếu.",
+    "reduce_or_prevent": "Gate của đội thực sự NGĂN được tác hại ghi lỗi oan và vượt trần vì write_gate nằm hoàn toàn ngoài model, độc lập kiểm tra danh mục fault_causes có hiệu lực và đếm số lỗi thực tế trong ngày của hãng để từ chối dứt khoát lệnh ghi trước khi được lưu vào cơ sở dữ liệu.",
+    "measure_in_pilot": "Cần đo lại độ trễ cập nhật trạng thái nguyên nhân giao hàng giữa hãng vận chuyển và hệ thống LogiX, cùng tỷ lệ phản hồi khiếu nại của đối tác vận chuyển trong điều kiện thời tiết cực đoan thực tế trước Bước đánh giá 2."
   }
 }

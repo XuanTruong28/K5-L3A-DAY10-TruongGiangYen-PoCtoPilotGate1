@@ -44,14 +44,28 @@ def write_gate(ctx, action):
                 if entitled == 0:
                     return Verdict.deny("Độ trễ tracking DB không đủ điều kiện hoàn tiền theo chính sách")
                 return Verdict.modify("Điều chỉnh số tiền hoàn theo tracking DB", amount_vnd=entitled)
+            elif action.get("amount_vnd", 0) < entitled and entitled > 0:
+                # Nâng lên đúng quyền lợi theo chính sách mới (tránh under-refund)
+                return Verdict.modify("Bổ sung đủ số tiền hoàn theo chính sách mới", amount_vnd=entitled)
 
-    # CỔNG 2: Chặn ghi lỗi oan cho hãng vận chuyển
+    # CỔNG 2: Chặn ghi lỗi oan cho hãng vận chuyển (đáp ứng thẻ sự cố S3: bão lũ & trần 2 lỗi/ngày)
     if tool == "file_carrier_fault":
+        carrier_id = action.get("carrier_id")
+
+        # Giới hạn trần số lỗi tự động ghi cho 1 hãng trong 1 ngày (ops_limits)
+        limits = ctx.tools.ops_limits()
+        max_strikes = limits.get("max_auto_strikes_per_carrier_per_day", 2)
+        if carrier_id:
+            strikes_today = len(ctx.tools.fault_rows(carrier_id=carrier_id))
+            if strikes_today >= max_strikes:
+                return Verdict.deny(f"Đã đạt trần {max_strikes} lỗi tự động trong ngày cho hãng {carrier_id}")
+
         order = ctx.tools.lookup_order(action["order_id"])
         if order:
             parcel = H.ticket_parcel(order, ctx.ticket, ctx.as_of)
             db_delay = H.db_delay_days(parcel, ctx.as_of)
             pol = H.effective_policy(ctx.tools.lookup_policies(), ctx.as_of)
+
             if pol and not H.carrier_at_fault(pol, parcel, db_delay):
                 return Verdict.deny("Không đủ điều kiện ghi lỗi hãng vận chuyển theo tracking DB")
 
