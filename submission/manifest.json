@@ -1,0 +1,25 @@
+{
+ "collected_at": "2026-11-18T16:11:54",
+ "incident": null,
+ "run_ids": {},
+ "grade_run_id": null,
+ "criteria_hash": "98f56da32dcc6a1a908f926fb6740a1a3fc061414f141e80a89107119d54b951",
+ "round1_hash": "59d6ce2afd79ae8a242fb0b88435efa80ff4ca9516e67bdbb7cc51a20a633912",
+ "code_hash": "2b324506473c7f94cd47bed36da561e2f48578b4e5bf6e843202592891d168eb",
+ "files": {
+  "code/guards.py": "08c6a48ed84e8d5c84dca21e46c879b8176446cb2a079e1f07ba6b455252c1a2",
+  "code/guards_round1.py": "08c6a48ed84e8d5c84dca21e46c879b8176446cb2a079e1f07ba6b455252c1a2",
+  "code/monitors.py": "d2f30768e7ab1b6caf27b73e11dc00f0699f73d564475010c6f34fb1096a9f34",
+  "config/acceptance_criteria.json": "98f56da32dcc6a1a908f926fb6740a1a3fc061414f141e80a89107119d54b951",
+  "config/acceptance_criteria.lock": "fd2b2dd4621e8bc939305c16bd524f2eaebce4053f6a29eb192ced38f6e71799",
+  "config/operating_gates.json": "33806219af4bdb2b539280f3b79fa7d9c31eab6fd1d5b9ab75cf71d0062f7b01",
+  "config/operating_gates.round1.json": "33806219af4bdb2b539280f3b79fa7d9c31eab6fd1d5b9ab75cf71d0062f7b01",
+  "config/round1.lock": "c1567976b7ef68c477ce73201f58fc5a596437c3169dd0104d55d9f40f6b1d21",
+  "config/switches.json": "9fcdb809437346392c6ded442f4f562c357ef89a7688a454505f94bcd969866b",
+  "docs/form-a-criteria.md": "0bf770727ebf15f1c084b0e966f460c321dffbfd20ba587cc73528d0e9813af9",
+  "docs/form-b-evaluation-gates.md": "ed9320421af024ccce71301d78eee6e9d3a5de762bb029a9ac2f4d0458518c4e",
+  "docs/form-c-incident.md": "a0bcda8c4c53b002cc40c80056ae280af920b5dfd5f51d3732ca9183477b3ee6",
+  "runs/journal.jsonl": "d2403687b62e6f364367b3e85e5c81f0698ba0ad720a3870f01b4acc9dc51502",
+  "submission.json": "49ce7af71bb8f5f92fb219442a3b65adfb59475373b355bf1cbd5c73803faf8e"
+ }
+}
