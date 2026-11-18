@@ -53,9 +53,21 @@ DỮ LIỆU nào, ở đâu, ai gán nhãn; TÍNH thế nào để hai người 
 
 ## A3 · Đọc một kết quả có khoảng tin cậy (phút 35–40)
 
+**Khung tư duy.** Tỉ lệ thành công (pass_rate) chỉ là một điểm ước lượng. Khi số lần chạy có hạn, hai phiên bản có pass_rate khác nhau chưa chắc đã khác nhau thật; phải nhìn khoảng tin cậy (confidence interval). Khi hai khoảng tin cậy chồng lên nhau nhiều, không thể vội kết luận cái này tốt hơn cái kia.
+
 ### Câu 1.5 · Chọn MỘT kết luận và giải thích một câu
 
-Số minh hoạ trong đề (không phải số của bàn). Khoanh: **(b)**
+Đọc kết quả sau (chạy trên 50 lần thử; các số dưới đây là số minh hoạ, không phải số của bàn; bàn sẽ tự chạy và đọc số thật của mình ở câu 2.1, sau khi đã ký):
+- Bản X: pass_rate = 0,9800 (49/50 lần chạy đạt), khoảng tin cậy 95% = [0,9400; 1,0].
+- Bản Y: pass_rate = 1,0000 (50/50 lần chạy đạt).
+
+Chọn MỘT kết luận đúng:
+- (a) Bản Y tốt hơn bản X có ý nghĩa thống kê; nên chọn Y.
+- (b) Chưa đủ căn cứ để nói Y tốt hơn X; chênh lệch 1 lần chạy (49 vs 50) nằm trong khoảng tin cậy của X và có thể do ngẫu nhiên.
+- (c) Bản X và bản Y chắc chắn có chất lượng như nhau.
+- (d) Phải chạy thêm hạt giống (seed) thì bản X mới đạt.
+
+Khoanh chọn: **(b)**
 
 Giải thích một câu: Khoảng tin cậy 95% của bản X là [0,9400; 1,0] bao trùm cả kết quả của bản Y (1,0), và sự chênh lệch chỉ 1 lần chạy (49/50 vs 50/50) hoàn toàn có thể do biến thiên mẫu ngẫu nhiên, do đó chưa đủ ý nghĩa thống kê để kết luận Y tốt hơn X.
 
