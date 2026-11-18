@@ -105,6 +105,6 @@ Giải thích một câu: Khoảng tin cậy 95% của bản X là [0,9400; 1,0]
 
 | Mục | Điền |
 |---|---|
-| Đã ký lúc (giờ máy in hoặc `signed_at` trong `config/acceptance_criteria.lock`) | (Điền sau khi chạy lệnh criteria sign) |
-| Mã commit `Sign acceptance criteria` (7 ký tự đầu, `git log --oneline -1`) | (Điền sau khi commit) |
+| Đã ký lúc (giờ máy in hoặc `signed_at` trong `config/acceptance_criteria.lock`) | 2026-11-18 14:45:52 |
+| Mã commit `Sign acceptance criteria` (7 ký tự đầu, `git log --oneline -1`) | 364acc4 |
 | Đã push lên `origin main` thành công? | có |
